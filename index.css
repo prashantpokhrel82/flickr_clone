@@ -1,3 +1,9 @@
+:root {
+  --primary-color: #025ed4;
+  --secondary-color: #f20081;
+  --grey-color: #999;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -7,4 +13,97 @@
 html {
   font-size: 62.5%;
   font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: url("https://source.unsplash.com/random/1600x1200");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.nav {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  gap: 10px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.logo {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.logo__image {
+  height: 50px;
+  width: 100px;
+}
+
+.logo_circle {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+}
+
+.blue-circle {
+  background: var(--primary-color);
+}
+
+.pink-circle {
+  background: var(--secondary-color);
+}
+
+.search_bar {
+  height: 3.5rem;
+  position: relative;
+}
+
+.search_icon {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  font-size: 2rem;
+  transform: translate(0, -50%);
+  border: none;
+  background: none;
+  outline: none;
+  color: var(--grey-color);
+}
+
+.search_bar input[type="text"] {
+  height: 100%;
+  width: 100%;
+  padding-left: 5rem;
+  background: rgba(255, 255, 255, 0.8);
+  border: none;
+  outline: none;
+  border-radius: 2px;
+  color: var(--grey-color);
+  font-size: 1.6rem;
+}
+
+.login_buttons {
+  display: flex;
+  gap: 20px;
+  justify-self: end;
+}
+
+.login {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 2rem;
+}
+
+.sign_up {
+  padding: 0.8rem 3rem;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #333;
+  border-radius: 5px;
 }
